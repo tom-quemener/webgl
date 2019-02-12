@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>WebGL</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+  </head>
+
+  <body>
+    <canvas id="glcanvas" width="1400" height="900"></canvas>
+		<div class="sliders">
+			<h1>Settings</h1>
+			<div class="translation">
+				<h2>Translation</h2>
+				tx<input type="range" min="1" max="100" value="50" class="slider" id="tx">
+				ty<input type="range" min="1" max="100" value="50" class="slider" id="ty">
+				tz<input type="range" min="1" max="100" value="50" class="slider" id="tz">
+			</div>
+			<div class="rotation">
+				<h2>Rotation</h2>
+				rx<input type="range" min="1" max="20" value="10" class="slider" id="rx">
+				ry<input type="range" min="1" max="20" value="10" class="slider" id="ry">
+				rz<input type="range" min="1" max="20" value="10" class="slider" id="rz">
+			</div>
+			<div class="camera">
+				<h2>Camera</h2>
+				zoom<input type="range" min="1" max="100" value="50" class="slider" id="zoom">
+				perspective<input type="range" min="1" max="100" value="50" class="slider" id="perspec">
+			</div>
+		</div>
+  </body>
+
+  <script src="http://www.labri.fr/perso/pbiasutt/Cours/WebGL/TP/3/gl-matrix-min.js"></script>
+  <script src="main.js"></script>
+</html>
